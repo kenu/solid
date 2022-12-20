@@ -15,7 +15,7 @@ class IEmail(object):
         pass
 
     @abstractmethod
-    def setContent(self, content):
+    def set_content(self, content):
         pass
 
 class Email(IEmail):
@@ -39,7 +39,7 @@ class Email(IEmail):
         else:
             self.__receiver = receiver
 
-    def setContent(self, content):
+    def set_content(self, content):
         if self.content_type == 'MyML':
             self.__content = '\n'.join(['<myML>', content, '</myML>'])
         else:
@@ -55,7 +55,7 @@ def main():
     email = Email('IM', 'MyML')
     email.set_sender('qmal')
     email.setReceiver('james')
-    email.setContent('Hello, there!')
+    email.set_content('Hello, there!')
     print email
 
 if __name__ == '__main__':
