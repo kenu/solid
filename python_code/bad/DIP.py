@@ -4,7 +4,7 @@
 class Worker(object):
 
     def work(self):
-        print "I'm working!!"
+        print("I'm working!!")
 
 
 class Manager(object):
@@ -13,7 +13,8 @@ class Manager(object):
         self.worker = None
 
     def set_worker(self, worker):
-        assert isinstance(worker, Worker), '`worker` must be of type {}'.format(Worker)
+        assert isinstance(
+            worker, Worker), '`worker` must be of type {}'.format(Worker)
 
         self.worker = worker
 
@@ -22,15 +23,17 @@ class Manager(object):
             self.worker.work()
             # And some complex codes go here....
 
+
 class SuperWorker(object):
 
     def work(self):
-        print "I work very hard!!!"
+        print("I work very hard!!!")
 
 # OK... now you can see what happend if we want the `Manager` to support `SuperWorker`.
 #  1. The `set_worker` must be modified or it will not pass the type-checking.
-#  2. The `manage` method should be re-test, which means you may or may not have to 
+#  2. The `manage` method should be re-test, which means you may or may not have to
 #     rewrite the testing code.
+
 
 def main():
 
@@ -44,7 +47,8 @@ def main():
     try:
         manager.set_worker(super_worker)
     except AssertionError:
-        print "manager fails to support super_worker...."
+        print("manager fails to support super_worker....")
+
 
 if __name__ == "__main__":
     main()
