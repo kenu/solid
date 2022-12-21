@@ -4,3 +4,4 @@
 ## python ##
 *.pyc
 .scannerwork
+sonar-project.properties

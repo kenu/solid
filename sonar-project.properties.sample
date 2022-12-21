@@ -2,4 +2,4 @@ sonar.projectKey=swlabs:solid
 sonar.projectName=solid
 sonar.sources=python_code
 sonar.language=py
-sonar.login=squ_ef0751a24c2496b13b9e01154592d455f7f0ae11
+sonar.login=tokenxxxxx51a24c2496b13b9e01154592d455f7f0ae11
