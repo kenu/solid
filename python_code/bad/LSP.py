@@ -33,7 +33,7 @@ class Prisoner(Person):
 
 def main():
     prisoner = Prisoner()
-    print "The prisoner trying to walk to north by 10 and east by -3."
+    print("The prisoner trying to walk to north by 10 and east by -3.")
     
     try:
         prisoner.walk_North(10)
@@ -41,8 +41,8 @@ def main():
     except:
         pass
     
-    print "The location of the prison: {}".format(prisoner.PRISON_LOCATION)
-    print "The current position of the prisoner: {}".format(prisoner.position)
+    print("The location of the prison: {}".format(prisoner.PRISON_LOCATION))
+    print("The current position of the prisoner: {}".format(prisoner.position))
 
 if __name__ == "__main__":
     main()
